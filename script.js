@@ -3,9 +3,11 @@ $(document).ready(function(){
     $('.menu-icon').on('click', function() {
         $(this).toggleClass("active")
         $('ul').toggleClass("active")
+        $('.hovers').css('transform', 'scale(0.8) translateY(100%)')
+        
     })
     $('.hovers').on('click', function(){
-        $('.outer').hide()
+        $(this).hide()
         $('.hidden-text').show()
     })
 })
