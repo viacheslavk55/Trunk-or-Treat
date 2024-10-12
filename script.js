@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.hidden-text').hide()
+    $('.hidden-details').hide()
     $('.menu-icon').on('click', function() {
         $(this).toggleClass("active")
         $('ul').toggleClass("active")
@@ -10,4 +11,35 @@ $(document).ready(function(){
         $(this).hide()
         $('.hidden-text').show()
     })
+    $('.button2').on('click', function(){
+        $(this).hide()
+        $('.hidden-details').show()
+    })
+    $('.fd').on('click', function(){
+        window.open('https://www.fedsonthego.com/', '_blank')
+    })
+    $('.gd').on('click', function(){
+        window.open('https://www.goldysicecream.com/', '_blank')
+    })
+
+    $(window).scroll(function() {
+        // Get the current scroll position
+        var scrollPosition = $(window).scrollTop();
+        // Get the position of the target element
+        var targetPosition = $('.button2').offset().top;
+        
+        // Check if the user has scrolled past the target position
+        if (scrollPosition >= targetPosition - $(window).height()) {
+            // Call your function
+            triggerFunction();
+        }
+    });
+
+    function triggerFunction() {
+        $('.hovers').hide()
+        $('.hidden-text').show()
+    }
+
+    // ^chatGPT code
+
 })
