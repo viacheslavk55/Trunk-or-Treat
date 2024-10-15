@@ -550,3 +550,7 @@ background: linear-gradient(180deg, rgba(33,37,41,1) 40%, rgba(136,199,208,1) 10
 .btn1:hover:before {
   transform: translateX(15em);
 }
+
+.tborder {
+  border: 2px solid white;
+}

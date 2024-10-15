@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.hidden-text').hide()
+    $('.hidden-description').hide()
     $('.hidden-details').hide()
     $('.menu-icon').on('click', function() {
         $(this).toggleClass("active")
@@ -41,5 +42,14 @@ $(document).ready(function(){
     }
 
     // ^chatGPT code
+
+
+    // trunks code
+    $('.trunks').on('mouseenter', function() {
+        $(this).css('cursor', 'pointer')
+        $(this).find('.hidden-description').fadeIn(500)
+    }).on('mouseleave', function() {
+        $(this).find('.hidden-description').fadeOut(500)
+    })
 
 })
