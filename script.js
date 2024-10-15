@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.hidden-text').hide()
     $('.hidden-description').hide()
     $('.hidden-details').hide()
+    $('.hidden-flyer').hide()
     $('.menu-icon').on('click', function() {
         $(this).toggleClass("active")
         $('ul').toggleClass("active")
@@ -52,4 +53,7 @@ $(document).ready(function(){
         $(this).find('.hidden-description').fadeOut(500)
     })
 
+    $('btnImg').on('click', function() {
+        $('hidden-flyer').slideToggle()
+    })
 })
