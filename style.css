@@ -5,8 +5,20 @@ body, html {
     
 
 }
+.lhigh {
+  line-height: 2.5;
+}
 .mostOut {
   background-image: url('images/bg.jpg'); 
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.mostOut2 {
+  background-image: url('images/bg2.jpg'); 
   background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

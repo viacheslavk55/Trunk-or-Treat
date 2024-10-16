@@ -2,7 +2,6 @@ $(document).ready(function(){
     $('.hidden-text').hide()
     $('.hidden-description').hide()
     $('.hidden-details').hide()
-    $('.hidden-flyer').hide()
     $('.menu-icon').on('click', function() {
         $(this).toggleClass("active")
         $('ul').toggleClass("active")
@@ -13,7 +12,7 @@ $(document).ready(function(){
         $(this).hide()
         $('.hidden-text').show()
     })
-    $('.button2').on('click', function(){
+    $('.btn2').on('click', function(){
         $(this).hide()
         $('.hidden-details').show()
     })
@@ -52,8 +51,12 @@ $(document).ready(function(){
     }).on('mouseleave', function() {
         $(this).find('.hidden-description').fadeOut(500)
     })
-
-    $('btnImg').on('click', function() {
-        $('hidden-flyer').slideToggle()
+    $('.hidden-flyer').hide()
+    $('.btnImg').on('click', function() {
+        $('.hidden-flyer').slideToggle()
+    })
+    $('.hidden-schedule').hide()
+    $('.btnText').on('click', function() {
+        $('.hidden-schedule').slideToggle()
     })
 })
